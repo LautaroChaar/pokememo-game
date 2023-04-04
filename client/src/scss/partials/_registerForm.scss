@@ -1,0 +1,43 @@
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 1px #24242496;
+  padding: 20px 10px;
+  border-radius: 24px;
+  @include animationMixin(registerFormAnimation, .8s, initial, forwards, 0s);
+  @include animation(registerFormAnimation, height, 0px, 535px);
+  width: 80%;
+  max-width: 344px;
+  margin: 20px 0;
+  .pokemonImg {
+    margin: 0 auto;
+    height: 60px;
+    filter: contrast(0.5);
+  }
+  * {
+    opacity: 0;
+    @include animationMixin(opacity, .6s, initial, forwards, .8s);
+    @include animation(opacity, opacity, 0, 1);
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div {
+    .registerForm {
+      @include animation(registerFormAnimation, height, 0px, 570px);
+      max-width: 480px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  div {
+    .registerForm {
+      flex-direction: row;
+      @include animation(registerFormAnimation, width, 0px, 730px);
+      max-width: 800px;
+      height: 424px;
+      justify-content: space-evenly;
+    }
+  }
+}

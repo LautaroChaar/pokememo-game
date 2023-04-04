@@ -1,0 +1,18 @@
+@mixin animationMixin ($name, $duration, $iteration, $fill, $delay){
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $iteration;
+  animation-fill-mode: $fill;
+  animation-delay: $delay;
+}
+
+@mixin animation($name, $property, $initialValue, $finalValue) {
+  @keyframes #{$name} {
+    0%{
+      #{$property}: $initialValue;
+    }
+    100%{
+      #{$property}: $finalValue;
+    }
+  }
+}

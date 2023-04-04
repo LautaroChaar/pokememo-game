@@ -1,0 +1,1 @@
+export type { default as FormSelectProps } from './FormSelectPropsType';

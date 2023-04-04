@@ -1,0 +1,46 @@
+.cardGame {
+  .frontCard {
+    .pokeballImg {
+      width: 44px;
+      height: 44px;
+      content: url(/pokeball.png);
+    }
+  }
+  .backCard {
+    .pokeImg {
+      height: 80%;
+      width: 80%; 
+    } 
+  }
+}
+
+.rotate {
+  transform: rotateY(-180deg); 
+}
+
+
+@media screen and (min-width: 600px) and (max-width:899px) {
+  .cardGame {
+    width: 50px;
+    height: 50px;
+    .frontCard {
+      .pokeballImg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:900px) {
+  .cardGame {
+    width: 60px;
+    height: 60px;
+    .frontCard {
+      .pokeballImg {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+div {
+  .opacityAnimation {
+    @include animationMixin(opacity, 1.2s, initial, forwards, 0s);
+    @include animation(opacity, opacity, 0, 1);
+    button {
+      .linkForm {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 1rem;
+        text-transform: capitalize;
+        transition: color .3s ease-in-out;
+        &:hover {
+          transition: color .3s ease-in-out;
+        }
+      }
+    } 
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div {
+    .opacityAnimation {
+      button {
+        .linkForm {
+          font-size: 1.3rem;
+        }
+      } 
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  div {
+    .opacityAnimation {
+      button {
+        .linkForm {
+          font-size: 1.6rem;
+        }
+      } 
+    }
+  }
+}

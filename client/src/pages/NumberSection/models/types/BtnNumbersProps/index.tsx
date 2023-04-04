@@ -1,0 +1,1 @@
+export type { default as BtnNumbersProps } from './BtnNumbersPropsType';

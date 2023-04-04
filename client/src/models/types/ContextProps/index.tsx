@@ -1,0 +1,1 @@
+export type { default as ContextProps } from './ContextPropsType';

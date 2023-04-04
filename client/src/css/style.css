@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+#root {
+  margin: 0 auto;
+  text-align: center; }
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background-image: url(/src/assets/Forest.jpg);
+  background-size: cover; }
+
+div .formLabel, div .formInput {
+  margin: 12px;
+  font-size: 1rem;
+  max-width: 250px; }
+
+div .formLabel {
+  font-weight: bolder; }
+
+div .formInput {
+  text-align: center;
+  border: transparent;
+  background-color: transparent;
+  outline: none; }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div .formLabel, div .formInput {
+    font-size: 1.1rem; } }
+
+@media screen and (min-width: 900px) {
+  div .formLabel, div .formInput {
+    font-size: 1.2rem; } }
+
+div .selectLabel, div .selectInput {
+  margin: 12px;
+  font-family: Ubuntu, sans-serif;
+  font-size: .9rem; }
+
+div .selectInput {
+  text-align: center;
+  border: transparent;
+  background-color: transparent;
+  outline: none; }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div .selectLabel, div .selectInput {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 900px) {
+  div .selectLabel, div .selectInput {
+    font-size: 1.1rem; } }
+
+body div div header div div p .logo {
+  display: flex;
+  align-items: center; }
+
+body div div header div div div button .linkPages {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  color: #b7b7b7;
+  font-size: 1rem;
+  text-transform: capitalize; }
+  body div div header div div div button .linkPages:hover {
+    color: #dddddd; }
+
+body div div ul li p .linkPages {
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  color: #b7b7b7;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize; }
+  body div div ul li p .linkPages:hover {
+    color: #dddddd; }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  body div div header div div div button .linkPages {
+    font-size: 1.1rem; }
+  body div div ul li p .linkPages {
+    font-size: 1.1rem; } }
+
+@media screen and (min-width: 900px) {
+  body div div header div div div button .linkPages {
+    font-size: 1.2rem; } }
+
+div .opacityAnimation {
+  animation-name: opacity;
+  animation-duration: 1.2s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+  animation-delay: 0s; }
+
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  div .opacityAnimation button .linkForm {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: color .3s ease-in-out; }
+    div .opacityAnimation button .linkForm:hover {
+      transition: color .3s ease-in-out; }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div .opacityAnimation button .linkForm {
+    font-size: 1.3rem; } }
+
+@media screen and (min-width: 900px) {
+  div .opacityAnimation button .linkForm {
+    font-size: 1.6rem; } }
+
+div .loginForm {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 1px #24242496;
+  padding: 20px 10px 20px 10px;
+  border-radius: 24px;
+  animation-name: loginFormAnimation;
+  animation-duration: 0.8s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  width: 80%;
+  max-width: 260px;
+  margin: 20px 0; }
+
+@keyframes loginFormAnimation {
+  0% {
+    height: 0px; }
+  100% {
+    height: 383px; } }
+  div .loginForm .pikachuImg {
+    margin: 0 auto;
+    height: 60px;
+    filter: contrast(0.5); }
+  div .loginForm * {
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 0.6s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s; }
+
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div .loginForm {
+    max-width: 450px; }
+  @keyframes loginFormAnimation {
+    0% {
+      height: 0px; }
+    100% {
+      height: 403px; } } }
+
+@media screen and (min-width: 900px) {
+  div .loginTitle {
+    animation-name: positionText;
+    animation-duration: 0.6s;
+    animation-iteration-count: initial;
+    animation-fill-mode: backwards;
+    animation-delay: 0.8s; }
+  @keyframes positionText {
+    0% {
+      top: -1000px; }
+    100% {
+      top: 0px; } }
+  div .loginForm {
+    flex-direction: row;
+    max-width: 600px;
+    height: 286px;
+    justify-content: space-evenly; }
+  @keyframes loginFormAnimation {
+    0% {
+      width: 0px; }
+    100% {
+      width: 730px; } } }
+
+.cardGame .frontCard .pokeballImg {
+  width: 44px;
+  height: 44px;
+  content: url(/pokeball.png); }
+
+.cardGame .backCard .pokeImg {
+  height: 80%;
+  width: 80%; }
+
+.rotate {
+  transform: rotateY(-180deg); }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .cardGame {
+    width: 50px;
+    height: 50px; }
+    .cardGame .frontCard .pokeballImg {
+      width: 50px;
+      height: 50px; } }
+
+@media screen and (min-width: 900px) {
+  .cardGame {
+    width: 60px;
+    height: 60px; }
+    .cardGame .frontCard .pokeballImg {
+      width: 60px;
+      height: 60px; } }
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 1px #24242496;
+  padding: 20px 10px;
+  border-radius: 24px;
+  animation-name: registerFormAnimation;
+  animation-duration: 0.8s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  width: 80%;
+  max-width: 344px;
+  margin: 20px 0; }
+
+@keyframes registerFormAnimation {
+  0% {
+    height: 0px; }
+  100% {
+    height: 535px; } }
+  .registerForm .pokemonImg {
+    margin: 0 auto;
+    height: 60px;
+    filter: contrast(0.5); }
+  .registerForm * {
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 0.6s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s; }
+
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div .registerForm {
+    max-width: 480px; }
+  @keyframes registerFormAnimation {
+    0% {
+      height: 0px; }
+    100% {
+      height: 570px; } } }
+
+@media screen and (min-width: 900px) {
+  div .registerForm {
+    flex-direction: row;
+    max-width: 800px;
+    height: 424px;
+    justify-content: space-evenly; }
+  @keyframes registerFormAnimation {
+    0% {
+      width: 0px; }
+    100% {
+      width: 730px; } } }

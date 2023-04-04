@@ -1,0 +1,33 @@
+div {
+  .formLabel, .formInput {
+  margin: 12px;
+  font-size: 1rem;
+  max-width: 250px;
+  }
+  .formLabel {
+    font-weight: bolder;
+  }
+  .formInput {
+    text-align: center;
+    border: transparent;
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div {
+    .formLabel, .formInput {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  div {
+    .formLabel, .formInput {
+      font-size: 1.2rem;
+    } 
+  }
+}

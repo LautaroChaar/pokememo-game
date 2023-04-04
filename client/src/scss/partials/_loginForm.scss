@@ -1,0 +1,49 @@
+div {
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 1px #24242496;
+    padding: 20px 10px 20px 10px;
+    border-radius: 24px;
+    @include animationMixin(loginFormAnimation, .8s, initial, forwards, 0s);
+    @include animation(loginFormAnimation, height, 0px, 383px);
+    width: 80%;
+    max-width: 260px;
+    margin: 20px 0;
+    .pikachuImg {
+      margin: 0 auto;
+      height: 60px;
+      filter: contrast(0.5);
+    }
+    * {
+      opacity: 0;
+      @include animationMixin(opacity, .6s, initial, forwards, .8s);
+      @include animation(opacity, opacity, 0, 1);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  div {
+    .loginForm {
+      @include animation(loginFormAnimation, height, 0px, 403px);
+      max-width: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  div {
+    .loginTitle {
+      @include animationMixin(positionText, .6s, initial, backwards, .8s);
+      @include animation(positionText, top, -1000px, 0px);
+    }
+    .loginForm {
+      flex-direction: row;
+      @include animation(loginFormAnimation, width, 0px, 730px);
+      max-width: 600px;
+      height: 286px;
+      justify-content: space-evenly;
+    }
+  }
+}
